@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nowas_Android_Tutorial">
         <activity
+            android:name=".DesignClass"
+            android:exported="false" />
+        <activity
             android:name=".Introdcution"
             android:exported="false" />
         <activity

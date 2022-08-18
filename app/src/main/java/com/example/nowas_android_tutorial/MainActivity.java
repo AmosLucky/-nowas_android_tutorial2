@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button introduction;
+    Button designclass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         introduction = findViewById(R.id.introduction);
+        designclass = findViewById(R.id.designclass);
+
+        designclass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, DesignClass.class);
+                startActivity(intent);
+
+            }
+        });
 
         introduction.setOnClickListener(new View.OnClickListener() {
             @Override
