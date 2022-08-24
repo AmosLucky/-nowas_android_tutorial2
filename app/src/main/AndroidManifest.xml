@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nowas_Android_Tutorial">
         <activity
+            android:name=".FormActivty"
+            android:exported="false" />
+        <activity
             android:name=".Design2"
             android:exported="false" />
         <activity
