@@ -1,9 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormActivty">
+    tools:context=".FormActivty"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"   >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your username "
+        android:id="@+id/username"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password "
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        />
+
+    <Spinner
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:id="@+id/gender"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:id="@+id/male"/>
+         <RadioButton
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:layout_weight="1"
+             android:text="Female"
+             android:id="@+id/female"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_marginTop="20dp"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+        >
+
+        <TextView
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CHECK OPTIONS"
+            />
+
+        <LinearLayout
+             android:layout_marginTop="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"  >
+
+            <CheckBox
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:text="Beans"
+                android:id="@+id/beans"
+                android:layout_weight="1"
+                />
+             <CheckBox
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                android:text="Rice"
+                 android:id="@+id/rice"
+                 android:layout_weight="1"
+                 />
+
+             <CheckBox
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                android:text="Yam"
+               android:id="@+id/yam"
+                 android:layout_weight="1"
+                 />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How much do you like football"
+            android:gravity="center"    />
+        <SeekBar
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:id="@+id/seekbar"
+            />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:id="@+id/percent"
+
+              android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        />
+
+                </LinearLayout>
+                  </ScrollView>
+</LinearLayout>
