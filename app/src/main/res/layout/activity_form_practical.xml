@@ -5,46 +5,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="20dp"
+    tools:context=".FormPractical"
     android:orientation="vertical"
+    android:layout_marginHorizontal="50dp"
+    android:layout_marginVertical="10dp"
+    android:padding="20dp"
     >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/person"/>
 
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Introduction to Layouts"
-        android:id="@+id/introduction"
-        />
+        android:id="@+id/full_name"
+        android:hint="Full name"/>
 
-
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IDesign Class"
-        android:id="@+id/designclass"
-        />
+        android:id="@+id/username"
+        android:hint="Username"/>
 
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IDesign Class22"
-        android:id="@+id/designclass2"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Form class"
-        android:id="@+id/form"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:inputType="textPassword"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Form Practical class"
-        android:id="@+id/form_practical"
-        />
+        android:id="@+id/register"
+        android:layout_marginTop="20dp"
+        android:text="Register"/>
+
 
 
 

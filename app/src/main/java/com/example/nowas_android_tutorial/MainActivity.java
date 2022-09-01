@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button introduction;
     Button designclass;
-    Button designclass2,form;
+    Button designclass2,form,form_practical;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
         designclass = findViewById(R.id.designclass);
         designclass2 = findViewById(R.id.designclass2);
         form = findViewById(R.id.form);
+        form_practical = findViewById(R.id.form_practical);
+        form_practical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, FormPractical.class);
+                startActivity(intent);
+
+            }
+        });
 
         form.setOnClickListener(new View.OnClickListener() {
             @Override
