@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nowas_Android_Tutorial">
         <activity
+            android:name=".InplicitIntent"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewPractal"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity

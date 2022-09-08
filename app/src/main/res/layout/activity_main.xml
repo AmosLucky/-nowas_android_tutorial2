@@ -46,6 +46,20 @@
         android:id="@+id/form_practical"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView Practical"
+        android:id="@+id/listview"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent Class"
+        android:id="@+id/intent"
+        />
+
 
 
 
